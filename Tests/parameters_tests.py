@@ -102,6 +102,7 @@ class MyTestCase(unittest.TestCase):
             assert output == "The sum of -12 and -9 is -21"
         finally:
             sys.stdout = saved_stdout
+            
 
 
 if __name__ == '__main__':
