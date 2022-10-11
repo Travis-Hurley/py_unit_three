@@ -19,12 +19,13 @@ total = number_1+number_2
 def add_two(number_1,number_2):
     print("The sum of", number_1,"and",number_2,"is", number_1+number_2)
 
-add_two(2,4)
+
 #add_two(number_1,number_2)
 
 
 # Do not change anything below these lines
 def main():
+    add_two(2, 4)
     pass
 
 if __name__ == '__main__':
