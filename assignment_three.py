@@ -2,8 +2,8 @@
 def main():
 
     print("This program will calculate the surface area of any prism!")
-
-    """assigns numbers to the variables from user"""
+    input("Enter anything to proceed>>")
+    """Assigns vaiables to numbers from user"""
     l = int(input("What is the length of the prism? >>"))
     w = int(input("What is the width of the prism? >>"))
     h = int(input("What is the height of the prism? >>"))
@@ -13,7 +13,7 @@ def main():
     rectangle_side2 =(w*l)*2
     """adds them for surface area"""
     surface_area=rectangle_base+rectangle_side2+rectangle_side1
-    print(surface_area)
+    print("The surface area of your prism is",surface_area)
 
 main()
 

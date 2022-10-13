@@ -1,11 +1,30 @@
 import unittest
 import assignment_three
+def main():
+
+    print("This program will calculate the surface area of any prism!")
+    input("Enter anything to proceed>>")
+    """Assigns vaiables to numbers from user"""
+    l = int(input("What is the length of the prism? >>"))
+    w = int(input("What is the width of the prism? >>"))
+    h = int(input("What is the height of the prism? >>"))
+    """calculates sides"""
+    rectangle_side1= (l*h)*2
+    rectangle_base = (h*w)*2
+    rectangle_side2 =(w*l)*2
+    """adds them for surface area"""
+    surface_area=rectangle_base+rectangle_side2+rectangle_side1
+    print("The surface area of your prism is",surface_area)
+
+
 
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
         self.assertEqual(True, False)  # add assertion here
+        assert(72)
 
 
 if __name__ == '__main__':
     unittest.main()
+
