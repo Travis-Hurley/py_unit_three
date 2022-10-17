@@ -5,40 +5,42 @@ def intro():
     input("Enter anything to proceed >>")
     """Assigns variables to numbers from user"""
 def length(length):
-    l = int(input("What is the length of the prism? >>"))
-    return l
+    length = int(input("What is the length of the prism? >>"))
+    return length
 def width(width):
-    w = int(input("What is the width of the prism? >>"))
-    return w
+    width = int(input("What is the width of the prism? >>"))
+    return width
 def height(height):
-    h = int(input("What is the height of the prism? >>"))
-    return h
-    """calculates sides"""
+    height = int(input("What is the height of the prism? >>"))
+    return height
+"""calculates sides"""
+def side1(length,height):
+    rectangle_side1 = (length*height)*2
 
-
-def side1(l,h):
-    rectangle_side1 = (length(l)*height(h))*2
     return rectangle_side1
-def side2(h,w):
-    rectangle_base = (height(h)*width(w))*2
+def side2(height,width):
+    rectangle_base = (height*width)*2
+
     return rectangle_base
-def side3 (w,l):
-    rectangle_side2 =(width(w)*length(l))*2
+def side3 (width,length):
+    rectangle_side2 =(width*length)*2
+
     return rectangle_side2
 def combine():
     surfaceArea=side1+side2+side3
     return surfaceArea
+
 def closing():
    print("The surface area of your prism is",combine())
 
 
 intro()
-length()
-height()
-width()
-side1()
-side2()
-side3()
+length(length)
+height(height)
+width(width)
+side1(length,height)
+side2(height,width)
+side3(width,length)
 combine()
 closing()
 
